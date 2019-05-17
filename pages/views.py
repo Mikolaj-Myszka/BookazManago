@@ -5,7 +5,7 @@ from books.models import Book
 
 
 def home(request):
-    home_listing = Book.objects.all()
+    home_listing = Book.objects.order_by('-added_date')[:3]
     context = {
         'listings': home_listing
     }
