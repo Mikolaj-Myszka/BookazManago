@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'books.apps.BooksConfig',
     'addbookmanually.apps.AddbookmanuallyConfig',
+    'addbookapi.apps.AddbookapiConfig',
     'django.contrib.humanize',
 ]
 

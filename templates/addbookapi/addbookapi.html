@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %} | Welcome {% endblock %}
+
+{% block content %}
+
+    <p>Author: {{ book_fields.author }}</p>
+    <p>Title: {{ book_fields.title }}</p>
+    <p>Description: {{ book_fields.description }}</p>
+    <p>Category: {{ book_fields.category }}</p>
+
+{% endblock %}

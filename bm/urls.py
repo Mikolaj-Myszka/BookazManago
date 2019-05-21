@@ -20,6 +20,6 @@ urlpatterns = [
     path('', include('pages.urls')),
     path('', include('books.urls')),
     path('', include('addbookmanually.urls')),
-    #path('', include('addbookmanually.urls')),
+    path('', include('addbookapi.urls')),
     path('admin/', admin.site.urls),
 ]

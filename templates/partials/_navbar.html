@@ -45,13 +45,13 @@
 
             <!--Import a Book from API-->
             <li 
-                {% if 'books' in request.path %}
+                {% if 'add-book-api' in request.path %}
                     class="nav-item active mr-3"
                 {% else %}
                     class="nav-item mr-3"
                 {% endif %}
             >
-            <a class="nav-link" href="{% url 'books' %}">Import a Book from API</a>
+            <a class="nav-link" href="{% url 'addbookapi' %}">Import a Book from API</a>
             </li>
             
         </ul>
