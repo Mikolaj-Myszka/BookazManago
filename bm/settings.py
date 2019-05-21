@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pages.apps.PagesConfig',
     'books.apps.BooksConfig',
+    'addbookmanually.apps.AddbookmanuallyConfig',
     'django.contrib.humanize',
 ]
 
