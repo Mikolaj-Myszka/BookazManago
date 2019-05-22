@@ -4,9 +4,19 @@
 
 {% block content %}
 
-    <p>Author: {{ book_fields.author }}</p>
-    <p>Title: {{ book_fields.title }}</p>
-    <p>Description: {{ book_fields.description }}</p>
-    <p>Category: {{ book_fields.category }}</p>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="keywords" placeholder="Your Keywords" />
+        <input type="submit" value="submit" />
+    </form>
+    
+    {% if book_fields %}
+        <p>Author: {{ book_fields.author }}</p>
+        <p>Title: {{ book_fields.title }}</p>
+        <p>Description: {{ book_fields.description }}</p>
+        <p>Category: {{ book_fields.category }}</p>
+
+        <h2>Book saved in the database</h2>
+    {% endif %}
 
 {% endblock %}
